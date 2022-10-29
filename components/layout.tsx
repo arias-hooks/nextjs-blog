@@ -7,7 +7,10 @@ import styles from './layout.module.css';
 const name = 'Koshiro Asa';
 export const siteTitle = 'Next.js Profile Website';
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home }: {
+  children: React.ReactNode
+  home?: boolean
+}) {
   return (
     <div className={styles.container}>
       <Head>
